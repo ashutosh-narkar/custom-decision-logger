@@ -1,0 +1,9 @@
+decision_logs:
+  plugin: println_decision_logger
+plugins:
+  println_decision_logger:
+    stderr: false
+  envoy_ext_authz_grpc:
+    addr: :9191
+    path: envoy/authz/allow
+    enable-reflection: true
